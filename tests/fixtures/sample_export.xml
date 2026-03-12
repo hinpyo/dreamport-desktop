@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HealthData locale="en_US">
+  <Record type="HKCategoryTypeIdentifierSleepAnalysis" sourceName="Apple Watch" device="Apple Watch Series 9" creationDate="2026-03-09 06:00:00 +0900" startDate="2026-03-09 01:00:00 +0900" endDate="2026-03-09 01:30:00 +0900" value="HKCategoryValueSleepAnalysisAwake">
+    <MetadataEntry key="HKTimeZone" value="Asia/Seoul"/>
+  </Record>
+  <Record type="HKCategoryTypeIdentifierSleepAnalysis" sourceName="Apple Watch" device="Apple Watch Series 9" creationDate="2026-03-09 06:00:00 +0900" startDate="2026-03-09 01:30:00 +0900" endDate="2026-03-09 03:00:00 +0900" value="HKCategoryValueSleepAnalysisAsleepCore">
+    <MetadataEntry key="HKTimeZone" value="Asia/Seoul"/>
+  </Record>
+  <Record type="HKCategoryTypeIdentifierSleepAnalysis" sourceName="Apple Watch" device="Apple Watch Series 9" creationDate="2026-03-09 06:00:00 +0900" startDate="2026-03-09 03:00:00 +0900" endDate="2026-03-09 04:00:00 +0900" value="HKCategoryValueSleepAnalysisAsleepREM">
+    <MetadataEntry key="HKTimeZone" value="Asia/Seoul"/>
+  </Record>
+  <Record type="HKCategoryTypeIdentifierSleepAnalysis" sourceName="Apple Watch" device="Apple Watch Series 9" creationDate="2026-03-09 06:00:00 +0900" startDate="2026-03-09 04:00:00 +0900" endDate="2026-03-09 05:00:00 +0900" value="HKCategoryValueSleepAnalysisAsleepDeep">
+    <MetadataEntry key="HKTimeZone" value="Asia/Seoul"/>
+  </Record>
+  <Record type="HKCategoryTypeIdentifierSleepAnalysis" sourceName="Apple Watch" device="Apple Watch Series 9" creationDate="2026-03-09 06:00:00 +0900" startDate="2026-03-09 05:00:00 +0900" endDate="2026-03-09 06:00:00 +0900" value="HKCategoryValueSleepAnalysisAsleepCore">
+    <MetadataEntry key="HKTimeZone" value="Asia/Seoul"/>
+  </Record>
+</HealthData>
