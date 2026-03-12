@@ -14,11 +14,9 @@ APP_NAME = "DreamPort"
 BUNDLE_ID = "io.github.example.dreamport"
 
 
-
 def _data_arg(source: Path, target_dir: str) -> str:
     separator = ";" if sys.platform.startswith("win") else ":"
     return f"{source}{separator}{target_dir}"
-
 
 
 def _icon_path() -> Path:
@@ -42,12 +40,29 @@ def _icon_path() -> Path:
     raise FileNotFoundError("No icon file found in assets/")
 
 
-
 def _bundle_mode_args() -> list[str]:
     if sys.platform.startswith("win"):
         return ["--onefile"]
     return ["--onedir"]
 
+
+# Modules that are safe to exclude: stdlib dev-only and build tools.
+# PIL.* submodules are intentionally NOT excluded here because PIL.Image
+# imports many of them internally, and excluding them causes ImportError
+# at runtime (e.g. "cannot import name 'TiffTags' from 'PIL'").
+_EXCLUDE_MODULES = [
+    "unittest",
+    "test",
+    "lib2to3",
+    "ensurepip",
+    "distutils",
+    "setuptools",
+    "pkg_resources",
+    "pip",
+    "pydoc",
+    "doctest",
+    "xmlrpc",
+]
 
 
 def main() -> int:
@@ -81,6 +96,9 @@ def main() -> int:
         "--add-data",
         _data_arg(PACKAGE_RESOURCES_DIR, "apple_health_to_oscar/resources"),
     ]
+
+    for mod in _EXCLUDE_MODULES:
+        args.extend(["--exclude-module", mod])
 
     args.extend(_bundle_mode_args())
 

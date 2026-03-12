@@ -261,7 +261,7 @@ def _default_output_dir(base_dir: Path) -> Path:
     return default_output_dir_for(base_dir)
 
 
-class OscarGuiApp(tk.Tk):
+class DreamPortApp(tk.Tk):
     def __init__(self, *, base_dir: Optional[Path] = None) -> None:
         super().__init__()
         self.base_dir = runtime_base_dir(base_dir)
@@ -528,12 +528,18 @@ class OscarGuiApp(tk.Tk):
 
         self._settings_icon_photo = self._load_settings_icon()
         if self._settings_icon_photo is not None:
-            settings_button = ttk.Button(parent, image=self._settings_icon_photo, style="Tool.TButton", command=self.open_preferences_window, width=3)
+            settings_widget = tk.Label(
+                parent, image=self._settings_icon_photo, bg=HERO_BG,
+                cursor="hand2", bd=0, relief="flat",
+            )
         else:
-            settings_button = ttk.Button(parent, text="⚙", style="Tool.TButton", command=self.open_preferences_window, width=3)
-        settings_button.grid(row=0, column=2, rowspan=2, sticky="ne", padx=(18, 0))
-        self._register_interactive_widget(settings_button)
-        Tooltip(settings_button, self.t("menu.app.preferences"))
+            settings_widget = tk.Label(
+                parent, text="⚙", bg=HERO_BG, fg=HERO_TEXT,
+                cursor="hand2", font=self._fonts["heading"],
+            )
+        settings_widget.grid(row=0, column=2, rowspan=2, sticky="ne", padx=(18, 0))
+        settings_widget.bind("<Button-1>", lambda _e: self.open_preferences_window())
+        Tooltip(settings_widget, self.t("menu.app.preferences"))
 
     def _build_files_panel(self, parent: ttk.LabelFrame) -> None:
         self._add_row_label(parent, 0, self.t("label.input_file"))
@@ -1261,9 +1267,7 @@ class OscarGuiApp(tk.Tk):
 
 
 
-DreamPortGuiApp = OscarGuiApp
-
 def main(*, base_dir: Optional[Path] = None) -> int:
-    app = OscarGuiApp(base_dir=base_dir)
+    app = DreamPortApp(base_dir=base_dir)
     app.mainloop()
     return 0

@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "apple-health-to-oscar"
 version = "0.1.0"
-description = "DreamPort: Apple Health sleep export to OSCAR Dreem/ZEO CSV converter with CLI and Tkinter GUI."
+description = "DreamPort: Apple Health sleep export to OSCAR Dreem/ZEO CSV converter with Tkinter GUI."
 readme = "README.md"
 requires-python = ">=3.9"
 dependencies = ["tzdata>=2024.1"]

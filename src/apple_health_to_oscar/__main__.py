@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from pathlib import Path
 
-from .cli import main
+from .gui import main
 
 
 if __name__ == "__main__":

@@ -12,7 +12,6 @@ The goal of this refactor is separation of concerns, not algorithmic change:
 
 from __future__ import annotations
 
-import argparse
 import csv
 import hashlib
 import math
