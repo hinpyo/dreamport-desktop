@@ -361,16 +361,6 @@ This project is licensed under the **GNU General Public License v3.0 (GPLv3)**.
 
 See [`LICENSE`](./LICENSE) for details.
 
-## Recommended GitHub Cleanup Before Publishing
-
-Before publishing this as an open-source repository, it helps to also prepare the following:
-
-- add a one-line project summary in the repository About section,
-- attach macOS / Windows ZIP files to GitHub Releases,
-- add one or two screenshots,
-- use `CHANGELOG.md` or GitHub Releases if you plan to track future updates, and
-- optionally add platform build automation under `.github/workflows/`.
-
 ## Contributing
 
 Bug reports, reproducible samples, UI/translation improvements, and build automation PRs are welcome.
