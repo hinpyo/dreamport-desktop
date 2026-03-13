@@ -1,4 +1,13 @@
-# DreamPort
+<table>
+  <tr>
+    <td width="72">
+      <img src="assets/oscar_icon.png" alt="DreamPort icon" width="64" />
+    </td>
+    <td>
+      <h1>DreamPort</h1>
+    </td>
+  </tr>
+</table>
 
 Apple Health의 수면 데이터(`export.xml` 또는 `export.zip`)를 읽어, OSCAR에서 import 가능한 **Dreem CSV** 및 **ZEO CSV**로 변환하는 크로스플랫폼 데스크톱 앱입니다.
 
@@ -16,7 +25,17 @@ Apple Health의 수면 데이터(`export.xml` 또는 `export.zip`)를 읽어, OS
 - 다국어 UI 리소스 포함
 - PyInstaller 기반 macOS / Windows 빌드 지원
 
-## 스크린샷 / 동작 개요
+## 스크린샷
+
+### 한국어 UI
+
+![DreamPort Korean UI](./for_README/screenshot_ko.png)
+
+### English UI
+
+![DreamPort English UI](./for_README/screenshot_en.png)
+
+## 동작 개요
 
 앱의 기본 흐름은 단순합니다.
 

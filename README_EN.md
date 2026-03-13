@@ -1,4 +1,13 @@
-# DreamPort
+<table>
+  <tr>
+    <td width="72">
+      <img src="assets/oscar_icon.png" alt="DreamPort icon" width="64" />
+    </td>
+    <td>
+      <h1>DreamPort</h1>
+    </td>
+  </tr>
+</table>
 
 DreamPort is a cross-platform desktop app that reads Apple Health sleep data (`export.xml` or `export.zip`) and converts it into **Dreem CSV** and **ZEO CSV** formats that can be imported into OSCAR.
 
@@ -16,7 +25,17 @@ This project provides a GUI-first workflow for converting **Apple Watch / Apple 
 - Includes multilingual UI resources
 - PyInstaller-based macOS / Windows build support
 
-## Screenshots / Workflow Overview
+## Screenshots
+
+### Korean UI
+
+![DreamPort Korean UI](./for_README/screenshot_ko.png)
+
+### English UI
+
+![DreamPort English UI](./for_README/screenshot_en.png)
+
+## Workflow Overview
 
 The app flow is intentionally simple:
 
