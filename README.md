@@ -1,13 +1,8 @@
-<table>
-  <tr>
-    <td width="72">
-      <img src="assets/oscar_icon.png" alt="DreamPort icon" width="64" />
-    </td>
-    <td>
-      <h1>DreamPort</h1>
-    </td>
-  </tr>
-</table>
+<p align="left">
+  <img src="./for_README/oscar_icon.png" alt="DreamPort icon" width="88" />
+</p>
+
+# DreamPort
 
 Apple Health의 수면 데이터(`export.xml` 또는 `export.zip`)를 읽어, OSCAR에서 import 가능한 **Dreem CSV** 및 **ZEO CSV**로 변환하는 크로스플랫폼 데스크톱 앱입니다.
 
