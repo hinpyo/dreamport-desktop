@@ -1,5 +1,5 @@
 <p align="left">
-  <img src="./for_README/oscar_icon.png" alt="DreamPort icon" width="88" />
+  <img src="./assets/oscar_icon.png" alt="DreamPort icon" width="88" />
 </p>
 
 # DreamPort
