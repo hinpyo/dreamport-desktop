@@ -27,10 +27,6 @@ This project provides a GUI-first workflow for converting **Apple Watch / Apple 
 
 ## Screenshots
 
-### Korean UI
-
-![DreamPort Korean UI](./for_README/screenshot_ko.png)
-
 ### English UI
 
 ![DreamPort English UI](./for_README/screenshot_en.png)
