@@ -31,10 +31,6 @@ Apple Health의 수면 데이터(`export.xml` 또는 `export.zip`)를 읽어, OS
 
 ![DreamPort Korean UI](./for_README/screenshot_ko.png)
 
-### English UI
-
-![DreamPort English UI](./for_README/screenshot_en.png)
-
 ## 동작 개요
 
 앱의 기본 흐름은 단순합니다.
