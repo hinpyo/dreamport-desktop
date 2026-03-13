@@ -1,13 +1,8 @@
-<table>
-  <tr>
-    <td width="72">
-      <img src="assets/oscar_icon.png" alt="DreamPort icon" width="64" />
-    </td>
-    <td>
-      <h1>DreamPort</h1>
-    </td>
-  </tr>
-</table>
+<p align="left">
+  <img src="./assets/oscar_icon.png" alt="DreamPort icon" width="88" />
+</p>
+
+# DreamPort
 
 DreamPort is a cross-platform desktop app that reads Apple Health sleep data (`export.xml` or `export.zip`) and converts it into **Dreem CSV** and **ZEO CSV** formats that can be imported into OSCAR.
 
